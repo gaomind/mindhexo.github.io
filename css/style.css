@@ -973,7 +973,8 @@ img {
   line-height: line-height;
 }
 .article-entry p,
-.article-entry table {
+.article-entry table,
+.article-entry blockquote {
   margin: 1.5rem 0;
 }
 .article-entry img,
@@ -1007,7 +1008,6 @@ img {
 }
 .article-entry blockquote {
   display: block;
-  margin: 0;
   padding: 0 1.5rem;
   width: 100%;
   overflow: auto;
@@ -1131,7 +1131,7 @@ img {
   height: auto;
 }
 .video .brand {
-  width: 3.8rem;
+  width: 3.2rem;
 }
 .video-frame {
   position: absolute;
@@ -2002,5 +2002,93 @@ pre .javascript .function {
   text-align: center;
 }
 .logo img {
-  width: 3.8rem;
+  width: 3.2rem;
+}
+.totop {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-border-radius: 3.2rem;
+  -moz-border-radius: 3.2rem;
+  border-radius: 3.2rem;
+  background-color: #f4f4f4;
+  line-height: 3rem;
+}
+.totop:hover > i {
+  animation: rocket 0.3s ease-in-out;
+}
+@-moz-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
